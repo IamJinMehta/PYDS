@@ -1,4 +1,5 @@
 x=input("Your Name:")
+print("****************** Mark sheet of ",x,"******************")
 a,b,c=-1,-1,-1
 while(a<0 or a>100):
     a=int(input("please Enter your Maths marks :"))
@@ -12,9 +13,9 @@ while(c<0 or c>100):
     c=int(input("please Enter your Physics marks :"))
     if(c<0 or c>100):
         print("Please enter the value between -1 to 101")
-print("****************** Mark sheet of ",x,"******************")
+
 z=a+b+c
-print(z,"/300")
+print("Total",z,"/300")
 avg=z/3
 print("average:","{:.2f}".format(avg),"%")
 if(100>=avg>81):
